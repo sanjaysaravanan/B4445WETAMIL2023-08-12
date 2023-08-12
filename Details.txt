@@ -1,0 +1,145 @@
+
+Topics:
+
+  DDL ( Data Definition Language ) vs DML ( Data Manipulation Language )
+
+  DDL: Defines the DB
+    Queries that allows to create the DB, Table with Data Model
+    EG: CREATE TABLE table_name (
+          column1 datatype,
+          column2 datatype,
+          column3 datatype,
+          ....
+        );
+        ALTER - Can only manipulate the definitions
+  
+  DML: Queries that allows the manipualtion of data from DB
+    EG:
+      Delete, insert, Select, Update
+
+  
+  Normailization:
+    entity data in the real world is often broken down into pieces and stored across multiple orthogonal tables using a process known as normalization
+
+  Joins in SQL:
+    Joins are used to retrieve data from 2 or more related tables. In general
+    tables are related to each other with foreign key constraints
+
+    Use Col_Name like,
+      <table_name>.<col_name>
+      Eg: Student.name, Teacher.name as Teacher, Teacher.Subject, Student.Mark
+
+    Inner Join:
+    
+    Outer Join:
+      LEFT
+      RIGHT
+      FULL
+
+  Download MongoDB: windows download MSI
+  Server:
+    https://www.mongodb.com/try/download/community
+  Shell:
+    https://www.mongodb.com/try/download/shell
+  Compass:
+    https://www.mongodb.com/try/download/compass
+  
+
+  NoSQL:
+  Non Relational Data
+    No Structure for the DB, it allows the storing in few different ways
+    JSON, Graph, Key Value Pair
+
+  MongoDB:
+    NoSql or Non Relational DB
+
+    Advantages of MongoDB:
+      1. No Joins Needed, structure is already related together
+        in one single table using the composite types
+      2. Flexible Schema/Model
+        Blueprint of a table or Shape of the Data, 
+        Data in MongoDB has a flexible schema. **Collections do not 
+        enforce document structure by default**. This flexibility 
+        gives you data-modeling choices to match your application 
+        and its performance requirements.
+      3. BSON - Binary JSON, Simples JSON like structure stored as BSON 
+                that way optimizes the storage
+      4. Embedded Documents:
+          JSON/Array inside the Same Object
+
+    MongoDB                         SQL
+
+    Database                    -    Database
+    Collection                  -    Table
+    Document                    -    Row/Record ( single data type )
+      Composite Datatypes( 
+      array, Object) are also
+      allowed
+  
+  Basic Queries in MongoDB:
+    Shell Commands:
+
+      Create DB
+        use <db-name>; // automatically create db reference
+
+      List Collections:
+        db.getCollectionNames();
+      
+      Create / insert data:
+        insertOne ( Object ), insertMany ( Array ) 
+
+        db.<collection-name>.insertOne/insertMany 
+        // automatically creates a collection as well
+        
+      Select:
+        all:
+          db.<collection-name>.find(); // all the records of the collection
+          Returns an cursor/array of the records/documents
+          Eg: db.users.find();
+
+        findOne:
+          db.<collection-name>.findOne();
+          return: single record/document
+
+        
+        filters few records:
+          db.<collection-name>.find(<query>);
+            query is simple dictionary with key value pair
+
+
+Books:
+
+  author
+  pages
+  bookId
+  publishedYear
+  title
+
+  1. Find all the books
+    db.books.find();
+  
+  2. Find all the books authored by Amanda Johnson
+    db.books.find({ author: 'Amanda Johnson' });
+  
+  3. Find the first the book written by Amanda Johnson
+    db.books.findOne({ author: 'Amanda Johnson' });
+
+Task:
+  1. Finish the Joins and submit the last week task
+  2. Completed the Mongo Installations
+  3. Practice mongo-compass and shell for below, ( use books, or users json )
+
+    a. DB Creation
+    b. Table Creation
+    c. data insert
+    d. find all 
+    e. find one with any author
+
+Next Session:
+  query, projection, options
+  
+
+
+        
+
+      

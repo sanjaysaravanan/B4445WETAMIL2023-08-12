@@ -1,0 +1,72 @@
+[
+  {
+    "bookId": "B001",
+    "title": "The Enigmatic Quest",
+    "author": "Amanda Johnson",
+    "publishedYear": 2010,
+    "pages": 328
+  },
+  {
+    "bookId": "B002",
+    "title": "Echoes of Eternity",
+    "author": "Michael Smith",
+    "publishedYear": 2005,
+    "pages": 412
+  },
+  {
+    "bookId": "B003",
+    "title": "Whispers in the Wind",
+    "author": "Emily Adams",
+    "publishedYear": 2018,
+    "pages": 256
+  },
+  {
+    "bookId": "B004",
+    "title": "Chronicles of Arcadia",
+    "author": "Daniel Brown",
+    "publishedYear": 1998,
+    "pages": 576
+  },
+  {
+    "bookId": "B005",
+    "title": "Serpent's Embrace",
+    "author": "Sophia Martinez",
+    "publishedYear": 2015,
+    "pages": 340
+  },
+  {
+    "bookId": "B006",
+    "title": "The Starlight Prophecy",
+    "author": "Jonathan Miller",
+    "publishedYear": 2007,
+    "pages": 432
+  },
+  {
+    "bookId": "B007",
+    "title": "A Twist of Fate",
+    "author": "Olivia Clark",
+    "publishedYear": 2022,
+    "pages": 298
+  },
+  {
+    "bookId": "B008",
+    "title": "Forgotten Realms",
+    "author": "Benjamin Wilson",
+    "publishedYear": 1995,
+    "pages": 510
+  },
+  {
+    "bookId": "B009",
+    "title": "The Midnight Sonata",
+    "author": "Ella Turner",
+    "publishedYear": 2011,
+    "pages": 382
+  },
+  {
+    "bookId": "B010",
+    "title": "Shadows of Destiny",
+    "author": "Christopher Lee",
+    "publishedYear": 2002,
+    "pages": 290
+  }
+]
